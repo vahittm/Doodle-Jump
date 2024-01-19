@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
-  public Vector3 pointA = new Vector3(-3.19f, 0, 0);
-  public Vector3 pointB = new Vector3(3.19f, 0, 0);
+  public Vector3 pointA = new Vector3(-2.3f, 0, 0);
+  public Vector3 pointB = new Vector3(2.3f, 0, 0);
   public float speed = 2f;
   private int direction = 1;
   public float jumpforce = 9f;

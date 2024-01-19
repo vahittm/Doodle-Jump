@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovingplatformPrefab: {fileID: 2045522393}
   NumofMovingPlat: 50
-  lelvelwidth: 3.19
+  lelvelwidth: 2.3
   minY: 15
   maxY: 400
 --- !u!4 &505824392
@@ -198,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 580679110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1.1315, z: 0}
+  m_LocalScale: {x: 0.90272707, y: 1.1315, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035792846}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformprefab: {fileID: 834463977}
   numofplatforms: 200
-  levelwidth: 3
+  levelwidth: 2.3
   minY: 0.5
   maxY: 1.5
 --- !u!4 &786143169
@@ -866,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045522393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56, y: 1.09, z: 0}
+  m_LocalPosition: {x: 2.18, y: 1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -885,8 +885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb0166f7e7a2ae4c8c4787c0d4d2f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {x: -3.19, y: 0, z: 0}
-  pointB: {x: 3.19, y: 0, z: 0}
+  pointA: {x: -2.3, y: 0, z: 0}
+  pointB: {x: 2.3, y: 0, z: 0}
   speed: 2
   jumpforce: 9
 --- !u!251 &2045522397

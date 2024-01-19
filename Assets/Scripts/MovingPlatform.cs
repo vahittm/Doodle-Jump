@@ -9,7 +9,7 @@ public class MovingPlatform : MonoBehaviour
 {
     public GameObject MovingplatformPrefab;
     public int NumofMovingPlat = 50;
-    public float lelvelwidth = 3.19f;
+    public float lelvelwidth = 2.3f;
     public float minY = .2f;
     public float maxY = 1.2f;
     
