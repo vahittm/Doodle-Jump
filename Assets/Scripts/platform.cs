@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class platform : MonoBehaviour
 {
-    public float jumpforce = 7f;
+    public float jumpforce = 9f;
      void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y <=0f)
