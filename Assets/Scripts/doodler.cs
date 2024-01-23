@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class doodler : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject BulletPrefab;
     public float movementSpeed = 10f;
     float movement = 0;
     Rigidbody2D rb;
@@ -30,6 +32,10 @@ public class doodler : MonoBehaviour
        }
        {
            
+       }
+       if (Input.GetKeyDown(KeyCode.Space))
+       {
+           Instantiate(BulletPrefab, transform.position, Quaternion.identity);
        }
     }
 

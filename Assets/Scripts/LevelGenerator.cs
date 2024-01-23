@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -25,8 +27,9 @@ public class LevelGenerator : MonoBehaviour
         }
         
     }
-      
-    }
+
+   
+}
 
     
 
