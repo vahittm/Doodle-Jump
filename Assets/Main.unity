@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovingplatformPrefab: {fileID: 199899808557472596, guid: 9fe0c1f6f967a7a48bfd2162e7cde3af, type: 3}
-  NumofMovingPlat: 50
+  NumofMovingPlat: 20
   lelvelwidth: 2.3
   minY: 15
   maxY: 400
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformprefab: {fileID: 2190160801668054102, guid: 9c016780f2b40b345a67588cd2926e59, type: 3}
-  numofplatforms: 200
+  numofplatforms: 100
   levelwidth: 2.3
   minY: 0.5
   maxY: 1.5
@@ -361,6 +361,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &801774624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801774626}
+  - component: {fileID: 801774625}
+  m_Layer: 0
+  m_Name: EnemyGen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &801774625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801774624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b67bbb1d2456bb49a391f21f6adcd84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 76688216708520296, guid: 3e670d22cd07d934c8cfabfa722fed3d, type: 3}
+  enemyPrefab2: {fileID: 511164263553030757, guid: 1ac3a6056168fe64aa2a39929351fb96, type: 3}
+  enemyPrefab3: {fileID: 4113532430914067352, guid: 5545bcdfba518ed4aa1430dc4755f88e, type: 3}
+  NumofEnemy: 2
+  NumofEnemy2: 2
+  NumofEnemy3: 3
+  levelwidth: 2.3
+  minY: 6
+  maxY: 100
+--- !u!4 &801774626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801774624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949383388
 GameObject:
