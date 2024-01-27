@@ -9,12 +9,17 @@ public class CameraFollow : MonoBehaviour
     
     void Update()
     {
-        if (target.position.y > transform.position.y)
+        if (target != null)
         {
-            var transform1 = transform;
-            var position = transform1.position;
-            position = new Vector3(position.x, target.position.y, position.z);
-            transform1.position = position;
+
+
+            if (target.position.y > transform.position.y)
+            {
+                var transform1 = transform;
+                var position = transform1.position;
+                position = new Vector3(position.x, target.position.y, position.z);
+                transform1.position = position;
+            }
         }
     }
 }

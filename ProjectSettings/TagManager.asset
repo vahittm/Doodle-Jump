@@ -10,6 +10,7 @@ TagManager:
   - Enemy1
   - Hole
   - Enemy2
+  - Destroyer
   layers:
   - Default
   - TransparentFX
