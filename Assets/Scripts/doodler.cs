@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class doodler : MonoBehaviour
@@ -11,6 +12,8 @@ public class doodler : MonoBehaviour
     public float movementSpeed = 10f;
     float movement = 0;
     Rigidbody2D rb;
+    private float TopScore = 0.0f;
+    public Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,11 @@ public class doodler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (rb.velocity.y>0 && transform.position.y > TopScore)
+        {
+            TopScore = transform.position.y;
+        }
+        scoreText.text = "Yore Score" + Mathf.Round(TopScore).ToString();
        movement= Input.GetAxis("Horizontal")* movementSpeed;
        if (transform.position.x < -3.55f)
        {
