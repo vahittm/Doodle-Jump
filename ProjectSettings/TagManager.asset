@@ -6,6 +6,10 @@ TagManager:
   tags:
   - NPlatform
   - MPlatform
+  - Bullet
+  - Enemy1
+  - Hole
+  - Enemy2
   layers:
   - Default
   - TransparentFX
