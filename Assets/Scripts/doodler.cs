@@ -10,9 +10,9 @@ public class doodler : MonoBehaviour
     [SerializeField]
     private GameObject BulletPrefab;
     public float movementSpeed = 10f;
-    float movement = 0;
+    float movement ;
     Rigidbody2D rb;
-    private float TopScore = 0.0f;
+    private float TopScore ;
     public Text scoreText;
     // Start is called before the first frame update
     void Start()
@@ -23,11 +23,25 @@ public class doodler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (movement < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        
+        
+        
         if (rb.velocity.y>0 && transform.position.y > TopScore)
         {
             TopScore = transform.position.y;
         }
-        scoreText.text = "Yore Score" + Mathf.Round(TopScore).ToString();
+        scoreText.text = "Youre Score:" + Mathf.Round(TopScore);
+        
+        
        movement= Input.GetAxis("Horizontal")* movementSpeed;
        if (transform.position.x < -3.55f)
        {
