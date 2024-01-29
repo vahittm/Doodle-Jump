@@ -670,7 +670,7 @@ MonoBehaviour:
   enemyPrefab3: {fileID: 4113532430914067352, guid: 5545bcdfba518ed4aa1430dc4755f88e, type: 3}
   NumofEnemy: 2
   NumofEnemy2: 2
-  NumofEnemy3: 3
+  NumofEnemy3: 2
   levelwidth: 2.3
   minY: 6
   maxY: 100
